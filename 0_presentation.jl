@@ -2,7 +2,7 @@ using CSV, DataFrames, Pipe, Dates
 
 df = DataFrame(CSV.File("data/zhvi.csv"))
 select!(df, :RegionName, 294:297)
-
+println(df)
 # Select by column
 select(df, :RegionName, 4:5)
 
